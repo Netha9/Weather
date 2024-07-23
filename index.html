@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="title">
+        <b><h>NethaFindToday</h></b>
+    </header>
+    <div id="form" class="form-container">
+        <h>FILL THE DETAILS AND GET WEATHER</h><br>
+        <form action="your-server-script.php" method="post">
+            <label for="latitude"><b>Latitude:</b></label>
+            <input type="text" id="latitude" name="latitude" required><br><br>
+            <label for="longitude"><b>Longitude:</b></label>
+            <input type="text" id="longitude" name="longitude" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="result-container" id="result">
+            <div style="font-size: 20px;" class="result-title"><b><i>Today Result:</i></b></div><br>
+            <b><p>NO2: <span id="NO2"></span></p><br></b>
+            <b><p>CO: <span id="CO"></span></p><br></b>
+            <b><p>O: <span id="O"></span></p><br></b>
+            <b><p>O2: <span id="O2"></span></p><br></b>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
